@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE</title>
+    <link rel="shortcut icon" href="img/favicon.ico" alt="파비콘">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.daehong.com/static/pub/front/kr/css/common.css">
+    <link rel="stylesheet" href="https://www.daehong.com/static/pub/front/kr/css/main.css">
+    <link rel="stylesheet" href="https://www.daehong.com/static/pub/front/kr/css/vertical_carousal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://www.daehong.com/static/pub/front/js/vertical_carousal.js"></script>
+    <script type="text/javascript" language="JavaScript">
+        $(window).scroll(function() {
+            var main_download = $("#download").offset().top - 50;
+            var main_intro = $("#intro").offset().top;
+            var main_playlist = $("#playlist").offset().top;
+            var main_player = $("#player").offset().top;
+            var scrollTop = $(this).scrollTop();
+            if (scrollTop >= main_download && scrollTop < main_intro) {
+                $(".title.main_tit").removeClass("main_active");
+                $(".download").addClass("main_active");
+            } else if (scrollTop >= main_intro && scrollTop < main_playlist) {
+                $(".title.main_tit").removeClass("main_active");
+                $(".intro").addClass("main_active");
+            } else if (scrollTop >= main_playlist && scrollTop < main_player) {
+                $(".title.main_tit").removeClass("main_active");
+                $(".playlist").addClass("main_active");
+            } else if (scrollTop >= main_player) {
+                $(".title.main_tit").removeClass("main_active");
+                $(".player").addClass("main_active");
+            } else {
+                $(".title.main_tit").removeClass("main_active");
+            }
+        });
+
+    </script>
+
+    <!--[if lt IE 9]> <script src="https://www.daehong.com/static/pub/front/js/html5shiv.js"></script> <![endif]-->
+</head>
+
+<body>
+
+
+
+
+    <header>
+        <div class="header_wrap">
+            <div class="header main">
+                <h2 class="title main_tit download">DOWNLOAD</h2>
+                <h2 class="title main_tit intro">INTRO</h2>
+                <h2 class="title main_tit playlist">PLAYLIST</h2>
+                <h2 class="title main_tit player">PLAYER</h2>
+                <div class="inner">
+                    <div class="v_lg"><a href="#download"><img src="img/logo.png" alt="로고"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="myVerticalCarousel" class="vertical-carousel" data-urllock="false" data-rests-indicators="#navbar-collapse li">
+        <ol class="vertical-carousel-indicators hidden-xs">
+            <li data-target="#myVerticalCarousel" data-slide-to="0"></li>
+            <li data-target="#myVerticalCarousel" data-slide-to="1"></li>
+            <li data-target="#myVerticalCarousel" data-slide-to="2"></li>
+            <li data-target="#myVerticalCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="vertical-carousel-box">
+            <!-- main show room -->
+
+
+            <!-- download -->
+            <div id="download" class="item">
+                <div class="mainimg"></div>
+                <div class="contain">
+                    <div class="inner">
+                        <div class="box1">
+                            <h1 class="hidden">VIBE 다운로드</h1>
+                            <div class="box1_text">
+                                <h1><span>뮤직앱의 종착은</span><br>
+                                    네이버의 VIBE</h1>
+                                <p>구글플레이 평점 4.6의 압도적인 고객 만족도<br>
+                                    첫 구독자는 최대 6개월 무료 혜택</p>
+                                <a href="#" class="btn1">
+                                    <div>자세히보기</div>
+                                </a>
+                                <div class="btn2"><a href="#">Download <span>VIBE</span></a></div>
+                            </div>
+                            <div class="phone1"><img src="img/phone1.png" alt="폰1"></div>
+                            <!--clear-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- intro -->
+            <div id="intro" class="item">
+                <div class="box2 color-change-3x">
+                    <h1 class="소개글01"></h1>
+                    <div class="inner">
+                        <div class="slice_photo1">
+                            <div class="slice_photo1-1 animate__animated animate__slideInDown"><img src="img/slide_photo1-1.png" alt="슬라이드 포토1"></div>
+                            <div class="slice_photo1-2"><img src="img/slide_photo1-2.png" alt="슬라이드 포토1"></div>
+                            <div class="slice_photo1-3"><img src="img/slide_photo1-3.png" alt="슬라이드 포토1"></div>
+                            <div class="slice_photo1-4"><img src="img/slide_photo1-4.png" alt="슬라이드 포토1"></div>
+                        </div>
+                        <div class="box2_text">
+                            <h1 class="text-focus-in">"널 위해 준비했어"</h1>
+                            <p class="text-focus-in3">좋아하는 음악을 빠르게 틀 수 있고,<br>
+                                좋아할 음악을 쉽게 발견할 수 있도록<br>
+                                모든 것이 나에게 맞춰진 나만의 VIBE</p>
+                        </div>
+                        <!--clear-->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- playlist -->
+            <div id="playlist" class="item">
+                <div class="box3">
+                    <h1 class="소개글02"></h1>
+                    <div class="inner">
+                        <div class="box3_left">
+                            <div class="box3_left_top">
+                                <div class="slice_photo2-1"><img src="img/slide_photo2-1.png" alt="슬라이드 포토2"></div>
+                                <div class="slice_photo2-2"><img src="img/slide_photo2-2.png" alt="슬라이드 포토2"></div>
+                                <div class="slice_photo2-3"><img src="img/slide_photo2-3.png" alt="슬라이드 포토2"></div>
+                            </div>
+                            <div class="box3_left_bot">
+                                <h2>말하지 않아도 아는 믹스테잎</h2>
+                                <p>좋아하는 노래를 알아서 모아주는 똑똑한 믹스테잎.<br>
+                                    노래를 많이 들을수록 취향 저격률 상승!</p>
+                            </div>
+                        </div>
+                        <div class="box3_right">
+                            <div class="box3_right_top">
+                                <h2>한땀 한땀 만든 플레이리스트</h2>
+                                <p>K-Pop부터 클래식까지 모든 장르를 아우르는 건 기본.<br>
+                                    수천 개의 플레이리스트가 트렌드에 맞게 업데이트.</p>
+                            </div>
+                            <div class="box3_right_bot">
+                                <img src="img/slide_photo3.png" alt="슬라이드 포토3">
+                            </div>
+                        </div>
+                        <!--clear-->
+                    </div>
+                    <div class="circleM slide-out-left"></div>
+                </div>
+
+
+
+            </div>
+
+            <!-- player -->
+            <div id="player" class="item">
+                <div class="box4">
+                    <h1 class="소개글03"></h1>
+                    <div class="inner">
+                        <div class="box4_left">
+                            <div class="phone2"><img src="img/phone2.png" alt="phone"></div>
+                            <div class="box4_text">
+                                <h2>나만을 위한 DJ</h2>
+                                <p>원하는 느낌,<br>
+                                    장르만 고르면 취향에 맞는 노래가 끊임없이.<br>
+                                    AI DJ는 믹싱까지 야무지게.</p>
+                            </div>
+                            <!--clear-->
+                        </div>
+                        <div class="box4_right">
+                            <div class="box4_right_top">
+                                <img src="img/img1.png" alt="플레이어">
+                            </div>
+                            <div class="box4_right_bot">
+                                <h2>기본에 충실한 플레이어</h2>
+                                <p>필요한 기능만 남긴 심플한 플레이어.<br>
+                                    마음에 드는 노래는 "좋아요" 눌러서 쉽게 보관.</p>
+                                <div class="circleM2 slide-tl"></div>
+                            </div>
+                        </div>
+                        <!--clear-->
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="inner">
+                        <ul class="f_text">
+                            <li><a href="https://policy.naver.com/policy/privacy.html" target="_blank">개인정보취급방침</a></li>
+                            <li><a href="https://policy.naver.com/rules/service.html" target="_blank">이용약관</a></li>
+                            <li><a href="https://help.naver.com/support/service/main.help?serviceNo=20371" target="_blank">고객센터</a></li>
+                            <li><a href="https://www.navercorp.com/" target="_blank">ⓒ NAVER Corp.</a></li>
+                            <li class="f_logo"><a href="index.html"><img src="img/f_logo.png" alt="푸터로고"></a></li>
+                            <!--clear-->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
